@@ -8,11 +8,11 @@ function dropDownMenu() {
 
 // THIS IS ABOUT THE BOX WITH INSTRUCTIONS
 
-const mainButton = document.querySelector(".mainButton")
+const nextButton = document.querySelector(".nextButton")
 const thisChange1 = document.querySelector(".thisChange1")
 const thisChange2 = document.querySelector(".thisChange2")
 
-mainButton.addEventListener("click", function(){
+nextButton.addEventListener("click", function(){
   thisChange1.innerHTML = "";
   thisChange1.innerHTML = thisChange2.innerHTML;
 })

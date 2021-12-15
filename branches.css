@@ -6,7 +6,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  font-weight: 600;
   flex-direction: column;
   width: 98vw;
 }
@@ -50,7 +49,9 @@ form {
     padding: 2rem;
 }
 .paragraph {
-    padding: 2rem;
+    width: 33vw;
+    height: auto;
+
 }
 @media screen and (min-width: 720px) {
 
