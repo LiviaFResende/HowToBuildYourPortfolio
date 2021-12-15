@@ -13,6 +13,11 @@ h2 {
   wrap: wrap;
   margin: 2rem;
 }
+
+h5 {
+  font-size: 14px;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -30,6 +35,7 @@ a:hover {
   row-gap: .05rem;
   grid-template-areas: 
   "header"
+  "nav"
   "mobile"
   "left"
   "main"
@@ -38,7 +44,7 @@ a:hover {
   "footer"
 }
 header {
-  background-color: #efd158;
+  background-color: #edbf1a;
   /*grid-area: header;*/
   display: flex;
   flex-direction: row;
@@ -46,22 +52,50 @@ header {
   justify-content: space-evenly;
   grid-area: header;
   width: 100%;
+  position: relative;
 }
+
+nav {
+  grid-area: nav;
+}
+
 .logo {
   display: block;
   border: 1px solid;
   padding: 1rem;
   margin: 1rem;
+  border-radius: 50px;
+  height: auto;
+  width: auto;
 }
 .title {
   padding: 1rem;
   margin: 1rem;
 }
+
+.inst-box-1 {
+  position: absolute;
+  height: auto;
+  width: 33%;
+  top: 33vh;
+  left: 33vw;
+  z-index: 1;
+  background-color: #ffebeb;
+  text-align: center;
+  line-height: 2rem;
+  padding: 2rem;
+}
+
 .hamburguer {
   margin: 2rem;
 }
 .desktop {
   display: none;
+}
+
+main {
+  display: flex;
+  align-items: center;
 }
 
 .main-photo-mobile {
@@ -78,12 +112,11 @@ header {
   list-style-type: none;
 }
 .mobile {
-  border: 3px solid #f3f2f2;
   display: flex;
   justify-content: right;
   flex-direction: column;
   grid-area: mobile;
-  background-color: pink;
+  background-color: #8046a5;
   margin: none;
 }
 section {
@@ -96,7 +129,7 @@ section {
 .article1,.article2,.article3,.article4 {
   width: 35%;
   border: 1px solid;
-  background-color: #efd158;
+  background-color: #edbf1a;
   padding: 1rem 1rem 1rem 1rem;
   margin: .5rem;
 }
@@ -113,7 +146,7 @@ aside {      /* INSERT LINKS FOR PARTNERS WEBSITES OR SOCIAL MEDIA */
 }
 
 footer {
-  background-color: #d48529;
+  background-color: #edbf1a;
   grid-area: footer;
   display: block;
 }
@@ -154,6 +187,7 @@ footer {
     row-gap: .05rem;
     grid-template-areas: 
     "header header header"
+    "nav nav nav"
     "desktop desktop desktop"
     "left main right"
     "left updatesection right"
@@ -175,13 +209,17 @@ footer {
   .hamburguer {
     display: none;
 }
+
+nav {
+  grid-area: nav;
+}
 .desktop {
     display: flex;
     flex-direction: row;
     text-decoration: none;
     justify-content: space-evenly;
     grid-area: desktop;
-    background-color:#d48529;
+    background-color:#8046a5;
     align-items: center;
     padding: 1rem;
     margin: 0px;
@@ -230,11 +268,11 @@ footer {
 }
 
 
-/*  COLORS
-#917f9e purple
-#f3f2f2 white
-#a3a478 green *closed
-#efd158 yellow
-#d48529 orange
+/* follow the colors used
+background-color: #005c62; light green
+  background-color: #8046a5; purple
+  background-color: #e60023; red
+  background-color: #ff5247; orange
+  background-color: #edbf1a; yellow
+  background-color: #ffebeb; white
 */
-
