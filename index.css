@@ -129,7 +129,7 @@ main {
   justify-content: right;
   flex-direction: column;
   grid-area: mobile;
-  background-color: #8046a5;
+  background-color: #ffebeb;
   margin: none;
 }
 section {

@@ -13,12 +13,12 @@ const thisChange1 = document.querySelector(".thisChange1")
 const thisChange2 = document.querySelector(".thisChange2")
 const previousButton = document.querySelector(".previousButton")
 
-nextButton.addEventListener("click", function () {
+nextButton.addEventListener("onclick", function () {
   thisChange1.innerHTML = "";
   thisChange1.innerHTML = thisChange2.innerHTML;
 })
 
-previoustButton.addEventListener("click", function () {
+previoustButton.addEventListener("onclick", function () {
   thisChange2.innerHTML = "";
   thisChange2.innerHTML = thisChange1.innerHTML;
 })
