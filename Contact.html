@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="branches.css" rel="stylesheet" type="text/css">
+    <link href ="branches.js" rel = "stylesheet" type = "Javascript/text">
+    <title>Contact</title>
+</head>
+
+<body>
+    <section class="getintouch">
+        <h3>Entre em contato conosco</h3>
+        <div class="form">
+            <form action="">
+                <label for="fname" class="distance">Nome</label>
+                <input type="text" class="distance" id="fname" placeholder="Seu nome...">
+                <label for="lname" class="distance">Sobrenome</label>
+                <input type="text" class="distance" id="lname" placeholder="Seu sobrenome...">
+                <label for="email" class="distance">Email</label>
+                <input type="text" class="distance" id="email" placeholder="Coloque o seu email aqui">
+                <label for="interess" class="distance">Coloque seu interesse aqui</label>
+                <select name="interess" class="distance" id="interess">
+                    <option value="Mentoring">MentoriaMM</option>
+                    <option value="Maternity">Maternidade no Exterior</option>
+                    <option value="Fashion">Moda</option>
+                </select>
+                <button onclick="receivedMessage()" id="contact-submit" class="distance">"ENVIE ESTE FORMULÁRIO"</button>
+                <p id="send-message"></p>
+            </form>
+        </div>
+    </section>
+    <section class="message">
+        <p>Mas se você quer apenas me enviar um simples e-mail não se preocupe, porque esta também é uma opção válida é
+            só enviar email para: milapisoni@yahoo.com.br </p>
+    </section>
+</body>
+
+</html>
+
+<script src="branches.js"></script>
