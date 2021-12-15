@@ -9,13 +9,12 @@ function dropDownMenu() {
 // THIS IS ABOUT THE BOX WITH INSTRUCTIONS
 
 const mainButton = document.querySelector(".mainButton")
-const thisChange = document.querySelector(".thisChange")
 const thisChange1 = document.querySelector(".thisChange1")
+const thisChange2 = document.querySelector(".thisChange2")
 
 mainButton.addEventListener("click", function(){
-  thisChange.innerHTML = "";
-  thisChange.innerHTML = "Here goes the NewText";
-  thisChange.style.display = "none";
+  thisChange1.innerHTML = "";
+  thisChange1.innerHTML = thisChange2.innerHTML;
 })
 
 // How to add the new text from JS from DataBase
